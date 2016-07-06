@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.transaction do
+  u = User.create(name: 'Alice')
+  u.build_order(name: 'Order1')
+  u.save!
+end
