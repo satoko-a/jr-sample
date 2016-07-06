@@ -1,3 +1,2 @@
-class UserResource < JSONAPI::Resource
-  has_one :order
+class UserResource < AbstractResource
 end

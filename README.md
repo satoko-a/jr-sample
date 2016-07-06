@@ -1,24 +1,10 @@
-# README
+# JSONAPI::Resource sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a example project.
 
-Things you may want to cover:
+With `SomeResource < AbstractResouce < GrandAbstractResource`, we get warning messages "MODEL NOT FOUND".
+Of course AbstractResouce and GrandAbstractResource is `abstract` but I can't help it.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+[MODEL NOT FOUND] Model could not be found for AbstractResource. If this a base Resource declare it as abstract.
+```
